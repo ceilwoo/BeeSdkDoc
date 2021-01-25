@@ -1,7 +1,3 @@
----
-description: for typescript
----
-
 # Cocos Creator使用简介
 
 [下载](xia-zai-sdk.md) SDK后放在cocos creator项目的asset文件夹内的任意地方即可开始使用。
