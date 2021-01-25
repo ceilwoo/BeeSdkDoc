@@ -1,6 +1,6 @@
 # 设置昵称
 
-### setDisplayName
+#### setDisplayName
 
 ```typescript
 //设置用户昵称

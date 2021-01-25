@@ -1,6 +1,6 @@
 # 绑定邮箱、手机或渠道
 
-### bindEmail
+#### bindEmail
 
 ```typescript
 bee.bindEmail({
@@ -9,7 +9,7 @@ bee.bindEmail({
 });
 ```
 
-### bindPhone
+#### bindPhone
 
 ```typescript
 bee.bindPhone({
@@ -18,5 +18,5 @@ bee.bindPhone({
 });
 ```
 
-### bindChannel
+#### bindChannel
 

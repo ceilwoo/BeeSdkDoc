@@ -2,7 +2,7 @@
 
 玩家需要登录后才能使用其他功能，bee提供了多种登录方式适配不同的场合和渠道。
 
-### loginWithCustomId
+#### loginWithCustomId
 
 用唯一的自定义id登录，可以是设备id，idfa，gid等。用于匿名登录。
 
@@ -64,7 +64,7 @@ console.log(appdata);
 
 &gt;&gt; [数据结构](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.0#/LoginWithCustomId)
 
-### loginWithEmail
+#### loginWithEmail
 
 用邮箱和密码登录
 
@@ -95,7 +95,7 @@ Request
 | createAccount | string | true | 如果用户不存在，是否自动创建账号，默认false |
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
-### loginWithPhone
+#### loginWithPhone
 
-### loginWithChannel
+#### loginWithChannel
 
