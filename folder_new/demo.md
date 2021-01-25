@@ -1,6 +1,6 @@
 # Demo
 
-demo.ts
+## demo.ts
 
 ```typescript
 import { bee } from "./BeeSdk";

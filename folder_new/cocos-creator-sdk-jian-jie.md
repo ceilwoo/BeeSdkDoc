@@ -2,13 +2,13 @@
 
 [下载](xia-zai-sdk.md) SDK后放在cocos creator项目的asset文件夹内的任意地方即可开始使用。
 
-#### 引入typescript sdk
+## 引入typescript sdk
 
 ```typescript
 import { bee } from "./BeeSdk";
 ```
 
-#### 初始化SDK
+## 初始化SDK
 
 ```typescript
 bee.init("APPID");
@@ -16,7 +16,7 @@ bee.init("APPID");
 
 注册gamebee后在后台新建app，可以获得对应的appid
 
-#### 代码约定
+## 代码约定
 
 所有bee的方法都是小写开头驼峰式，与服务器通信的接口固定2个参数 requrest和 callback，返回 promise，同时支持callback和 promise，可按需调用。使用vscode等IDE可以获得详细的代码提示。
 

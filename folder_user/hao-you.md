@@ -1,8 +1,8 @@
 # 好友
 
-#### addFriend
+## addFriend
 
-#### removeFriend
+## removeFriend
 
-#### getFriendList
+## getFriendList
 

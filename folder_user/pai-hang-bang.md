@@ -1,6 +1,6 @@
 # 排行榜
 
-#### getLeaderboard
+## getLeaderboard
 
 ```typescript
 let res = await bee.getLeaderboard({
@@ -8,9 +8,9 @@ let res = await bee.getLeaderboard({
 });
 ```
 
-#### getUserLeaderboard
+## getUserLeaderboard
 
-#### updateLeaderboards
+## updateLeaderboards
 
-#### getFriendLeaderboard
+## getFriendLeaderboard
 

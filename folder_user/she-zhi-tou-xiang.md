@@ -1,6 +1,6 @@
 # 设置头像
 
-#### setAvatarUrl
+## setAvatarUrl
 
 ```typescript
 //设置用户头像地址
