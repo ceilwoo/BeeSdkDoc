@@ -21,7 +21,5 @@
 
 ## App功能介绍 <a id="app"></a>
 
----
-
-* [读取配置](du-qu-pei-zhi.md)
+* [读取配置](app/du-qu-pei-zhi.md)
 
