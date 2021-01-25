@@ -2,24 +2,24 @@
 
 * [关于GameBee](README.md)
 
-## 新手上路 <a id="new"></a>
+## 新手上路 <a id="folder_new"></a>
 
-* [Cocos Creator使用简介](new/cocos-creator-sdk-jian-jie.md)
-* [下载SDK](new/xia-zai-sdk.md)
-* [Demo](new/demo.md)
+* [Cocos Creator使用简介](folder_new/cocos-creator-sdk-jian-jie.md)
+* [下载SDK](folder_new/xia-zai-sdk.md)
+* [Demo](folder_new/demo.md)
 
-## 玩家功能介绍 <a id="user"></a>
+## 玩家功能介绍 <a id="folder_user"></a>
 
-* [登录](user/deng-lu.md)
-* [数据读写](user/shu-ju-du-xie.md)
-* [设置头像](user/she-zhi-tou-xiang.md)
-* [设置昵称](user/she-zhi-ni-cheng.md)
-* [绑定邮箱、手机或渠道](user/bang-ding-you-xiang-shou-ji-huo-qu-dao.md)
-* [排行榜](user/pai-hang-bang.md)
-* [好友](user/hao-you.md)
-* [日志上报](user/ri-zhi-shang-bao.md)
+* [登录](folder_user/deng-lu.md)
+* [数据读写](folder_user/shu-ju-du-xie.md)
+* [设置头像](folder_user/she-zhi-tou-xiang.md)
+* [设置昵称](folder_user/she-zhi-ni-cheng.md)
+* [绑定邮箱、手机或渠道](folder_user/bang-ding-you-xiang-shou-ji-huo-qu-dao.md)
+* [排行榜](folder_user/pai-hang-bang.md)
+* [好友](folder_user/hao-you.md)
+* [日志上报](folder_user/ri-zhi-shang-bao.md)
 
-## App功能介绍 <a id="app"></a>
+## App功能介绍 <a id="folder_app"></a>
 
-* [读取配置](app/du-qu-pei-zhi.md)
+* [读取配置](folder_app/du-qu-pei-zhi.md)
 
