@@ -17,7 +17,7 @@ export default class ServerBee extends cc.Component {
 
     async beeTest(){
         //初始化sdk
-        bee.init("BCEY8VETSA");
+        bee.client.init("BCEY8VETSA");
         //登录bee
         try {
             let login = await bee.client.loginWithCustomId({

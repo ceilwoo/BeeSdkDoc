@@ -9,7 +9,7 @@
 ```typescript
 //函数定义:  bee.loginWithCustomId(request, (err,res)=>{})
 //样例1 callback example
-bee.loginWithCustomId({customId: "自定义ID"}, (err,res)=>{
+bee.client.loginWithCustomId({customId: "自定义ID"}, (err,res)=>{
     if(err){
         //登录失败
         console.log(err);
@@ -20,14 +20,14 @@ bee.loginWithCustomId({customId: "自定义ID"}, (err,res)=>{
 })
 
 //样例2 promise example
-let res = await bee.loginWithCustomId({customId: "自定义ID"});
+let res = await bee.client.loginWithCustomId({customId: "自定义ID"});
 //登录成功，打印登录信息
 console.log(res.result);
 
 
 
 //样例3 登录并返回用户详细的信息
-let res2 = await bee.loginWithCustomId({
+let res2 = await bee.client.loginWithCustomId({
     customId: "自定义ID",
     createAccount: true,
     infoRequest: {
@@ -71,7 +71,7 @@ console.log(appdata);
 ```typescript
 //函数定义:  bee.loginWithEmail(request, (err,res)=>{})
 //callback example
-bee.loginWithEmail({
+bee.client.loginWithEmail({
     email: "邮箱",
     password: "密码"
     createAccount: true
