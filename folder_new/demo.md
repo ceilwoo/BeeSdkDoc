@@ -20,18 +20,18 @@ export default class ServerBee extends cc.Component {
         bee.init("BCEY8VETSA");
         //登录bee
         try {
-            let login = await bee.loginWithCustomId({
+            let login = await bee.client.loginWithCustomId({
                 customId: "自定义ID", createAccount: true,
             });
             console.log("登录成功");
-        } catch (e : bee.LoginWithCustomId.Response) {
+        } catch (e : bee.model.LoginWithCustomId.Response) {
             //登录异常
             console.log(e);
             return;
         }
         
         //设置用户数据
-        bee.setUserData({
+        bee.client.setUserData({
             userData : {
                 "login_time" : 1,
                 "save" : JSON.stringify({
@@ -41,12 +41,12 @@ export default class ServerBee extends cc.Component {
         });
         
         //设置用户昵称
-        bee.setUserDisplayName:({
+        bee.client.setUserDisplayName:({
             displayName : "玩家1"
         });
         
         //读取用户数据
-        let res3 = await bee.getUserData({keys: ["login_time", "save"]});
+        let res3 = await bee.client.getUserData({keys: ["login_time", "save"]});
         const {login_time, save} = res3.result.userData;
         console.log(login_time); //1
         console.log(save); // {lv:1, age:10}

@@ -11,7 +11,7 @@ import { bee } from "./BeeSdk";
 ## 初始化SDK
 
 ```typescript
-bee.init("APPID");
+bee.client.init("APPID");
 ```
 
 注册gamebee后在后台新建app，可以获得对应的appid
@@ -22,14 +22,14 @@ bee.init("APPID");
 
 ```typescript
 //callback方式使用样例
-bee.getUserData({keys:["login"]}, (err,res)=>{
+bee.client.getUserData({keys:["login"]}, (err,res)=>{
     console.log(res.result);
 });
 ```
 
 ```typescript
 //promise方式使用样例
-let res = await bee.getUserData({keys:["login"]});
+let res = await bee.client.getUserData({keys:["login"]});
 console.log(res.result)
 ```
 

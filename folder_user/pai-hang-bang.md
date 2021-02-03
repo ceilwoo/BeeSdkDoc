@@ -3,7 +3,7 @@
 ## getLeaderboard
 
 ```typescript
-let res = await bee.getLeaderboard({
+let res = await bee.client.getLeaderboard({
 
 });
 ```
