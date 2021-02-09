@@ -4,7 +4,7 @@
 
 ```typescript
 //设置用户昵称
-bee.setDisplayName:({
+bee.client.setDisplayName:({
     displayName : "玩家1"
 });
 ```

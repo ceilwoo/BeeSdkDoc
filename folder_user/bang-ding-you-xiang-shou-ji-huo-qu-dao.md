@@ -1,9 +1,9 @@
-# 绑定邮箱、手机或渠道
+# 绑定邮箱、手机或平台
 
 ## bindEmail
 
 ```typescript
-bee.bindEmail({
+bee.client.bindEmail({
     email: "邮箱",
     password: "密码"
 });
@@ -12,11 +12,11 @@ bee.bindEmail({
 ## bindPhone
 
 ```typescript
-bee.bindPhone({
+bee.client.bindPhone({
     phone: "手机号码",
     code: "验证码"
 });
 ```
 
-## bindChannel
+## bindPlatform
 

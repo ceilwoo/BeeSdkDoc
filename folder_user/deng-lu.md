@@ -7,7 +7,6 @@
 用唯一的自定义id登录，可以是设备id，idfa，gid等。用于匿名登录。
 
 ```typescript
-//函数定义:  bee.loginWithCustomId(request, (err,res)=>{})
 //样例1 callback example
 bee.client.loginWithCustomId({customId: "自定义ID"}, (err,res)=>{
     if(err){
@@ -69,7 +68,6 @@ console.log(appdata);
 用邮箱和密码登录
 
 ```typescript
-//函数定义:  bee.loginWithEmail(request, (err,res)=>{})
 //callback example
 bee.client.loginWithEmail({
     email: "邮箱",
@@ -97,5 +95,5 @@ Request
 
 ## loginWithPhone
 
-## loginWithChannel
+## loginWithPlatform
 

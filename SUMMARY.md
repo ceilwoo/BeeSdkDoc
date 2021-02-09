@@ -14,7 +14,7 @@
 * [数据读写](folder_user/shu-ju-du-xie.md)
 * [设置头像](folder_user/she-zhi-tou-xiang.md)
 * [设置昵称](folder_user/she-zhi-ni-cheng.md)
-* [绑定邮箱、手机或渠道](folder_user/bang-ding-you-xiang-shou-ji-huo-qu-dao.md)
+* [绑定邮箱、手机或平台](folder_user/bang-ding-you-xiang-shou-ji-huo-qu-dao.md)
 * [用户资料](folder_user/yong-hu-zi-liao.md)
 * [排行榜](folder_user/pai-hang-bang.md)
 * [好友](folder_user/hao-you.md)
