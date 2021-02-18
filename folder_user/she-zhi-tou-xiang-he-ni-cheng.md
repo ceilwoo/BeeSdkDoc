@@ -21,4 +21,3 @@ bee.client.setDisplayName:({
     displayName : "玩家1"
 });
 ```
-
