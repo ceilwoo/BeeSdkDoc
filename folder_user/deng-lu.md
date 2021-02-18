@@ -6,7 +6,7 @@
 
 ## loginWithCustomId
 
-用唯一的自定义id登录，可以是生成的随机字符串、设备id，idfa，gid等。用于匿名登录。
+用唯一的自定义id登录，可以是生成的随机字符串、设备id，idfa，gid等。主要用于匿名登录。
 
 ```typescript
 //样例1 callback example
