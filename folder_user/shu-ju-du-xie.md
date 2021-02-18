@@ -13,10 +13,12 @@ bee.client.setUserData({
         })}
 });
 ```
+
 Request
+
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
-| userData | {[k:string]:string} | false | 写入用户的存储数据，一个key对应一条数据，可同时写入多条 |
+| userData | {\[k:string\]:string} | false | 写入用户的存储数据，一个key对应一条数据，可同时写入多条 |
 
 ## getUserData
 
@@ -27,12 +29,16 @@ const {login_time, save} = res3.result.userData;
 console.log(login_time); //1
 console.log(save); // {lv:1, age:10}
 ```
+
 Request:
+
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
-| keys | Array<string> | false | 根据key读取用户数据，如果key为空数组则返回用户所有存在的数据 |
+| keys | Array | false | 根据key读取用户数据，如果key为空数组则返回用户所有存在的数据 |
 
 Result:
+
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
-| userData | {[k:string]:string} | false | 用户数据 |
+| userData | {\[k:string\]:string} | false | 用户数据 |
+
