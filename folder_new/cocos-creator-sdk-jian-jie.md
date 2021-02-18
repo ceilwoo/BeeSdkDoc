@@ -33,7 +33,7 @@ let res = await bee.client.getUserData({keys:["login"]});
 console.log(res.result)
 ```
 
-每个方法的请求和返回消息内容均定义在对应名字的命名空间内，如getUserData方法的request的声明在 GetUserData.Request, 返回消息的声明是 GetUserData.Response，如果返回code不是200，callback的err会不为空，同时给promise抛出reject\(\)，开发者可以在这里做异常处理。
+每个方法的请求和返回消息内容均定义在对应名字的命名空间内，如getUserData方法的request的声明在 bee.model.GetUserData.Request, 返回消息的声明是 bee.model.GetUserData.Response，如果返回code不是200，callback的err会不为空，同时给promise抛出reject\(\)，开发者可以在这里做异常处理。
 
 ```typescript
 getUserData(request : GetUserData.Request, callBack?: (err:GetUserData.Response, res:GetUserData.Response)=>{}){}
