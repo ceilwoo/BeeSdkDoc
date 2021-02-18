@@ -47,7 +47,7 @@ console.log(appdata);
 
 [Request](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.0) 
 
-| 属性 | type | optional | desc |
+| 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
 | customId | string | false | 用唯一的自定义id登录 |
 | createAccount | boolean | true | 如果用户不存在，是否自动创建账号，默认false |
@@ -55,15 +55,30 @@ console.log(appdata);
 
 [Response](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.0#/LoginWithCustomId) 
 
-| 属性 | type | desc |
+| 属性 | 类型 | desc |
 | :--- | :--- | :--- |
-| [code](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.0#/BeeCode) | number | 状态码，正常返回是200 |
+| code | number | 状态码，正常返回是200 |
 | message | string | 描叙，success或者错误描叙 |
 | callBackTimeMS | string | 请求时长 |
-| [request](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.0) | Request | 请求消息体 |
-| [result](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.0) | Result | 返回消息体 |
+| request | LoginWithCustomId.Request | 请求消息体 |
+| result | BeeLoginResult | 返回消息体 |
 
-&gt;&gt; [数据结构](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.0#/LoginWithCustomId)
+BeeLoginResult
+| 属性 | 类型 | desc |
+| :--- | :--- | :--- |
+| beeId | string | bee用户id |
+| token | string ||
+| info  | BeeInfoRespone | 用户信息 |
+
+BeeInfoRespone
+| 属性 | 类型 | desc |
+| :--- | :--- | :--- |
+| userLeaderboards | BeeUserLeaderboards | 用户的排行榜信息 |
+| userData | dictionary | 用户的存储信息 |
+| appData | dictionary| App的配置信息 |
+
+
+[LoginWithCustomId API](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.0#/LoginWithCustomId)
 
 ## loginWithEmail
 
