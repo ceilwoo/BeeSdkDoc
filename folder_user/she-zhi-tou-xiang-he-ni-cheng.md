@@ -2,7 +2,7 @@
 
 设置头像地址和昵称后，在好友列表、排行表、getUserInfo等接口可以获取到avatarUrl和displayName
 
- bee只存储字符串，具体视觉呈现逻辑需要开发者自行实现。
+bee只存储字符串，具体视觉呈现逻辑需要开发者自行实现。
 
 ## setAvatarUrl
 
