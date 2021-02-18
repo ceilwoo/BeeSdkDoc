@@ -20,7 +20,7 @@ bee.client.bindEmail({
 });
 ```
 Request:
-| 属性 | type | opational | desc |
+| 属性 | 类型 | opational | desc |
 | :--- | :--- | :--- | :--- |
 | email | string | false | 邮箱 |
 | password | string | false | 密码 |
