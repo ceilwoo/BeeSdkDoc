@@ -55,16 +55,6 @@ Request
 | createAccount | boolean | true | 如果用户不存在，是否自动创建账号，默认false |
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
-Response
-
-| 属性 | 类型 | desc |
-| :--- | :--- | :--- |
-| code | number | 状态码，正常返回是200 |
-| message | string | 描叙，success或者错误描叙 |
-| callBackTimeMS | string | 请求时长 |
-| request | LoginWithCustomId.Request | 请求消息体 |
-| result | BeeLoginResult | 返回消息体 |
-
 
 
 ## loginWithEmail
@@ -126,9 +116,11 @@ Request
 用第三方渠道的唯一识别码登录，微信，facebook, apple id, twitter等
 
 ```typescript
+//微信小游戏登录
 bee.client.loginWithPlatform({
-    phone: "13800138000",
-    authCode: "123456"
+    platform: bee.model.BeePlatformCode.WECHAT_GAME,
+    code: "EXAMPLE_CODE_CODE_CODE_CODE_CODE", //使用微信login接口获得的code
+    createAccount: true
 }, (err,res)=>{
     if(err){
         //登录失败
@@ -140,7 +132,23 @@ bee.client.loginWithPlatform({
 })
 ```
 
+| 属性 | type | opational | desc |
+| :--- | :--- | :--- | :--- |
+| platform | BeePlatformCode | false | 平台的枚举 |
+| code | string | false | 对应平台获得的code |
+| createAccount | string | true | 如果用户不存在，是否自动创建账号，默认false |
+| infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
+
 ## 登录返回
+Response
+
+| 属性 | 类型 | desc |
+| :--- | :--- | :--- |
+| code | number | 状态码，正常返回是200 |
+| message | string | 描叙，success或者错误描叙 |
+| callBackTimeMS | string | 请求时长 |
+| request | LoginWithCustomId.Request | 请求消息体 |
+| result | BeeLoginResult | 返回消息体 |
 
 BeeLoginResult
 | 属性 | 类型 | desc |

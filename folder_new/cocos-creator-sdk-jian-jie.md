@@ -39,3 +39,15 @@ console.log(res.result)
 getUserData(request : GetUserData.Request, callBack?: (err:GetUserData.Response, res:GetUserData.Response)=>{}){}
 ```
 
+#### 所有Response都具有以下固定属性
+
+Response
+
+| 属性 | 类型 | desc |
+| :--- | :--- | :--- |
+| code | number | 状态码，正常返回是200 |
+| message | string | 描叙，success或者错误描叙 |
+| callBackTimeMS | string | 请求时长 |
+| request | any | 请求消息体 |
+| result | any | 返回消息体 |
+
