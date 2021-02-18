@@ -17,6 +17,17 @@ bee.client.loginWithCustomId({customId: "自定义ID"}, (err,res)=>{
         return;
     }
     //登录成功，打印登录信息
+    /*
+    {
+        code: 200,
+        message: "success",
+        callBackTimeMS: 100
+        result: {
+            beeId: "XXXX",
+            token: "XXXX"
+        }
+    }
+    */
     console.log(res.result);
 })
 
