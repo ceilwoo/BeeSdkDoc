@@ -140,6 +140,39 @@ bee.client.loginWithPlatform({
 | createAccount | string | true | 如果用户不存在，是否自动创建账号，默认false |
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
+### 微信小游戏
+开发者在后台配置好微信小游戏的appid和密钥后
+```typescript
+    wx.login({
+        success: (res) => {
+            bee.client.loginWithPlatform({
+                platform: bee.model.BeePlatformCode.WECHAT_GAME,
+                code: res.code
+            }, (err,res)=>{
+                if(err) return;
+                console.log("登录成功");
+            });
+        },
+        fail: (res) => { },
+        complete: (res) => { }
+    });
+```
+### QQ小游戏
+```typescript
+    qq.login({
+        success: (res) => {
+            bee.client.loginWithPlatform({
+                platform: bee.model.BeePlatformCode.QQ_GAME,
+                code: res.code
+            }, (err,res)=>{
+                if(err) return;
+                console.log("登录成功");
+            });
+        },
+        fail: (res) => { },
+        complete: (res) => { }
+    });
+```
 ## 登录返回
 
 所有登录接口都返回相同的数据BeeLoginResult
