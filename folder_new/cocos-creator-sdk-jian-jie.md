@@ -39,7 +39,7 @@ console.log(res.result)
 getUserData(request : GetUserData.Request, callBack?: (err:GetUserData.Response, res:GetUserData.Response)=>{}){}
 ```
 
-#### 所有Response都具有以下固定属性
+### 所有Response都具有以下固定属性
 
 Response
 

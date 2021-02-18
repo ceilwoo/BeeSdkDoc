@@ -2,8 +2,6 @@
 
 玩家需要登录后才能使用其他功能，bee提供了多种登录方式适配不同的使用场合。支持匿名登录和常用平台的服务端二次验证。
 
-
-
 ## loginWithCustomId
 
 [API](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.0#/LoginWithCustomId)
@@ -55,8 +53,6 @@ Request
 | createAccount | boolean | true | 如果用户不存在，是否自动创建账号，默认false |
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
-
-
 ## loginWithEmail
 
 用邮箱和密码登录
@@ -88,7 +84,9 @@ Request
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
 ## loginWithPhone
+
 用手机+验证码登录 或者 手机+密码登录
+
 ```typescript
 bee.client.loginWithPhone({
     phone: "13800138000",
@@ -103,7 +101,9 @@ bee.client.loginWithPhone({
     console.log(res.result);
 })
 ```
+
 Request
+
 | 属性 | type | opational | desc |
 | :--- | :--- | :--- | :--- |
 | phone | string | false | 邮箱 |
@@ -113,6 +113,7 @@ Request
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
 ## loginWithPlatform
+
 用第三方渠道的唯一识别码登录，微信，facebook, apple id, twitter等
 
 ```typescript
@@ -140,6 +141,7 @@ bee.client.loginWithPlatform({
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
 ## 登录返回
+
 Response
 
 | 属性 | 类型 | desc |
@@ -151,15 +153,18 @@ Response
 | result | BeeLoginResult | 返回消息体 |
 
 BeeLoginResult
+
 | 属性 | 类型 | desc |
 | :--- | :--- | :--- |
 | beeId | string | bee用户的唯一id |
-| token | string ||
-| info  | BeeInfoRespone | 用户信息 |
+| token | string | token，登录后用于bee客户端验证，一般情况下开发者不需要处理这个 |
+| info | BeeInfoRespone | 用户信息 |
 
 BeeInfoRespone
+
 | 属性 | 类型 | desc |
 | :--- | :--- | :--- |
 | userLeaderboards | BeeUserLeaderboards | 用户的排行榜信息 |
 | userData | dictionary | 用户的存储信息 |
-| appData | dictionary| App的配置信息 |
+| appData | dictionary | App的配置信息 |
+
