@@ -34,7 +34,7 @@ Request:
 
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
-| keys | Array | false | 根据key读取用户数据，如果key为空数组则返回用户所有存在的数据 |
+| keys | Array&lt;string&gt; | false | 根据key读取用户数据，如果key为空数组则返回用户所有存在的数据 |
 
 Result:
 

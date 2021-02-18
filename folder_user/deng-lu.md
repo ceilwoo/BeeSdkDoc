@@ -152,7 +152,9 @@ bee.client.loginWithPlatform({
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
 ### 微信小游戏
+
 使用前需要开发者在后台配置好微信小游戏的appid和密钥
+
 ```typescript
     wx.login({
         success: (res) => {
@@ -168,8 +170,11 @@ bee.client.loginWithPlatform({
         complete: (res) => { }
     });
 ```
+
 ### QQ小游戏
+
 使用前需要开发者在后台配置好QQ小游戏的appid和密钥
+
 ```typescript
     qq.login({
         success: (res) => {
@@ -185,6 +190,7 @@ bee.client.loginWithPlatform({
         complete: (res) => { }
     });
 ```
+
 ## 登录返回
 
 所有登录接口都返回相同的数据BeeLoginResult
@@ -215,7 +221,8 @@ bee.client.loginWithPlatform({
 | userData | {\[k:string\]:string} | 用户的存储信息 |
 | appData | {\[k:string\]:string} | App的配置信息 |
 
-#### BeePlatformCode (渠道代码)
+#### BeePlatformCode \(渠道代码\)
+
 * 100 - `APPLE` - 苹果
 * 110 - `GOOGLE_PLAY` - google play
 * 120 - `FACEBOOK` - facebook
@@ -224,3 +231,4 @@ bee.client.loginWithPlatform({
 * 131 - `WECHAT_GAME` - 微信小游戏
 * 140 - `QQ` - QQ
 * 141 - `QQ_GAME` - QQ小游戏
+

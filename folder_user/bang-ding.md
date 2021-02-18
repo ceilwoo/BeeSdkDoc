@@ -19,7 +19,9 @@ bee.client.bindEmail({
     }
 });
 ```
+
 Request:
+
 | 属性 | 类型 | opational | desc |
 | :--- | :--- | :--- | :--- |
 | email | string | false | 邮箱 |
@@ -43,13 +45,14 @@ bee.client.bindPhone({
     }
 });
 ```
+
 Request:
+
 | 属性 | type | opational | desc |
 | :--- | :--- | :--- | :--- |
 | phone | string | false | 手机号码 |
 | autoCode | string | true | 验证码，使用手机+验证码登录时使用 |
-| password | string | true | 密码,使用手机+密码登录时使用|
-
+| password | string | true | 密码,使用手机+密码登录时使用 |
 
 ## bindPlatform
 
@@ -68,8 +71,11 @@ bee.client.bindPhone({
     }
 });
 ```
+
 Request:
+
 | 属性 | type | opational | desc |
 | :--- | :--- | :--- | :--- |
 | platform | BeePlatformCode | false | 渠道枚举 |
 | code | string | false | 从渠道获得的code |
+

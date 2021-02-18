@@ -18,10 +18,11 @@ Request:
 
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
-| keys | Array<string> | false |  |
+| keys | Array&lt;string&gt; | false |  |
 
 Result:
 
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
 | appData | {\[k:string\]:string} | false | App配置 |
+

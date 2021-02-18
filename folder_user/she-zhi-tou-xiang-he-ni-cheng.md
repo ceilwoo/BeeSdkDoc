@@ -12,7 +12,9 @@ bee.client.setAvatarUrl:({
     avatarUrl : "头像地址或id"
 });
 ```
+
 Request:
+
 | 属性 | type | opational | desc |
 | :--- | :--- | :--- | :--- |
 | avatarUrl | string | false | 头像地址或id |
@@ -27,6 +29,8 @@ bee.client.setDisplayName:({
 ```
 
 Request:
+
 | 属性 | type | opational | desc |
 | :--- | :--- | :--- | :--- |
 | displayName | string | false | 昵称 |
+
