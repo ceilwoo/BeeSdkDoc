@@ -10,7 +10,7 @@ function generateSidebar(){
 	fs.writeFileSync('_sidebar.md', output);
 	console.log("##################");
 	console.log("install: npm i docsify-cli -g")
-	console.log("run docsify serve");
+	console.log("run: docsify serve");
 	console.log("##################");
 }
 

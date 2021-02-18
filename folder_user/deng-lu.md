@@ -167,6 +167,5 @@ BeeInfoRespone
 | 属性 | 类型 | desc |
 | :--- | :--- | :--- |
 | userLeaderboards | BeeUserLeaderboards | 用户的排行榜信息 |
-| userData | dictionary | 用户的存储信息 |
-| appData | dictionary | App的配置信息 |
-
+| userData | {[k:string]:string} | 用户的存储信息 |
+| appData | {[k:string]:string} | App的配置信息 |
