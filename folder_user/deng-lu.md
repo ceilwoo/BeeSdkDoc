@@ -141,7 +141,7 @@ bee.client.loginWithPlatform({
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
 ### 微信小游戏
-开发者在后台配置好微信小游戏的appid和密钥后
+使用前需要开发者在后台配置好微信小游戏的appid和密钥
 ```typescript
     wx.login({
         success: (res) => {
@@ -158,6 +158,7 @@ bee.client.loginWithPlatform({
     });
 ```
 ### QQ小游戏
+使用前需要开发者在后台配置好QQ小游戏的appid和密钥
 ```typescript
     qq.login({
         success: (res) => {
