@@ -142,6 +142,8 @@ bee.client.loginWithPlatform({
 
 ## 登录返回
 
+所有登录接口都返回相同的数据BeeLoginResult
+
 Response
 
 | 属性 | 类型 | desc |
