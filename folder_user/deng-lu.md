@@ -144,7 +144,7 @@ bee.client.loginWithPlatform({
 
 所有登录接口都返回相同的数据BeeLoginResult
 
-Response
+#### Response
 
 | 属性 | 类型 | desc |
 | :--- | :--- | :--- |
@@ -154,7 +154,7 @@ Response
 | request | LoginWithCustomId.Request | 请求消息体 |
 | result | BeeLoginResult | 返回消息体 |
 
-BeeLoginResult
+#### BeeLoginResult
 
 | 属性 | 类型 | desc |
 | :--- | :--- | :--- |
@@ -162,7 +162,7 @@ BeeLoginResult
 | token | string | token，登录后用于bee客户端验证，一般情况下开发者不需要处理这个 |
 | info | BeeInfoRespone | 用户信息 |
 
-BeeInfoRespone
+#### BeeInfoRespone
 
 | 属性 | 类型 | desc |
 | :--- | :--- | :--- |
@@ -170,3 +170,12 @@ BeeInfoRespone
 | userData | {\[k:string\]:string} | 用户的存储信息 |
 | appData | {\[k:string\]:string} | App的配置信息 |
 
+#### BeePlatformCode (渠道代码)
+* 100 - `APPLE` - 苹果
+* 110 - `GOOGLE_PLAY` - google play
+* 120 - `FACEBOOK` - facebook
+* 121 - `FACEBOOK_GAME` - facebook 小游戏
+* 130 - `WECHAT` - wechat
+* 131 - `WECHAT_GAME` - 微信小游戏
+* 140 - `QQ` - QQ
+* 141 - `QQ_GAME` - QQ小游戏
