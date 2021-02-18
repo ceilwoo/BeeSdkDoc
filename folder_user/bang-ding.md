@@ -3,7 +3,9 @@
 给用户绑定多种登录方式
 
 ## bindEmail
+
 绑定后可以通过邮箱密码登录bee
+
 ```typescript
 bee.client.bindEmail({
     email: "邮箱",
@@ -19,7 +21,9 @@ bee.client.bindEmail({
 ```
 
 ## bindPhone
-绑定后可以通过手机+验证码 (通过sendPhoneAuthMesssage获取) 或者手机+密码登录bee
+
+绑定后可以通过手机+验证码 \(通过sendPhoneAuthMesssage获取\) 或者手机+密码登录bee
+
 ```typescript
 bee.client.bindPhone({
     phone: "手机号码",
@@ -36,7 +40,9 @@ bee.client.bindPhone({
 ```
 
 ## bindPlatform
+
 绑定后可以通过渠道登录bee
+
 ```typescript
 bee.client.bindPhone({
     platform: bee.model.BeePlatformCode.WECHAT_GAME,
