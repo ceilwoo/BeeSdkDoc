@@ -94,34 +94,6 @@ Request
 | createAccount | string | true | 如果用户不存在，是否自动创建账号，默认false |
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
-## loginWithPhone
-
-用手机+验证码登录 或者 手机+密码登录
-
-```typescript
-bee.client.loginWithPhone({
-    phone: "13800138000",
-    authCode: "123456"
-}, (err,res)=>{
-    if(err){
-        //登录失败
-        console.log(err);
-        return;
-    }
-    //登录成功，打印登录信息
-    console.log(res.result);
-})
-```
-
-Request
-
-| 属性 | type | opational | desc |
-| :--- | :--- | :--- | :--- |
-| phone | string | false | 邮箱 |
-| authCode | string | true | 使用手机+验证码登录时需要的验证码 |
-| password | string | true | 使用手机+密码登录时需要的密码 |
-| createAccount | string | true | 如果用户不存在，是否自动创建账号，默认false |
-| infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
 ## loginWithPlatform
 
@@ -195,12 +167,41 @@ bee.client.loginWithPlatform({
 ```typescript
             bee.client.loginWithPlatform({
                 platform: bee.model.BeePlatformCode.APPLE,
-                code: "客户端获取到identity"
+                code: "客户端获取到的 Identity token"
             }, (err,res)=>{
                 if(err) return;
                 console.log("登录成功");
             });
 ```
+
+## loginWithPhone
+
+用手机+验证码登录 或者 手机+密码登录
+
+```typescript
+bee.client.loginWithPhone({
+    phone: "13800138000",
+    authCode: "123456"
+}, (err,res)=>{
+    if(err){
+        //登录失败
+        console.log(err);
+        return;
+    }
+    //登录成功，打印登录信息
+    console.log(res.result);
+})
+```
+
+Request
+
+| 属性 | type | opational | desc |
+| :--- | :--- | :--- | :--- |
+| phone | string | false | 邮箱 |
+| authCode | string | true | 使用手机+验证码登录时需要的验证码 |
+| password | string | true | 使用手机+密码登录时需要的密码 |
+| createAccount | string | true | 如果用户不存在，是否自动创建账号，默认false |
+| infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
 ## 登录返回
 
