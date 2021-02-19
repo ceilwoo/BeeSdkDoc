@@ -25,3 +25,4 @@ Result:
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
 | appData | {\[k:string\]:string} | false | App配置 |
+
