@@ -129,3 +129,13 @@ Result:
 | totalUser | number | false | 排行榜总人数 |
 | position | number | false | 我的排名，下标1开始 |
 | value | number | false | 我的数值 |
+
+## 备注：
+BeeLeaderboard
+| 属性 | 类型 | optional | desc |
+| :--- | :--- | :--- | :--- |
+| beeId | string | false | 目标的beeId |
+| position | number | false | 排名，下标1开始算 |
+| value | number | false | 数值 |
+| avatarUrl | string | false | 用户头像地址 |
+| displayName | string | false | 用户昵称 |
