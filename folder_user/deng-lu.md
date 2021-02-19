@@ -164,6 +164,7 @@ bee.client.loginWithPlatform({
 ```
 
 ### Apple登录
+
 ```typescript
             bee.client.loginWithPlatform({
                 platform: bee.model.BeePlatformCode.APPLE,

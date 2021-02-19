@@ -9,14 +9,22 @@ let res = await bee.client.getLeaderboard({
     key: "LEADERBOARD_ID_1",
     maxResultsCount: 30,
 });
-/*
-    {
+/* 
+//// res 
+ {
+     code:200,
+     message: success,
+     request: {
+         key: "LEADERBOARD_ID_1",
+         maxResultsCount: 30,
+     }
+     result: {
         leaderboard: [...], //前30的排行榜
         totalUser: 120,   //排行榜总用户
         position: 10,     //我的排名
-        value: 5000       //我的数值
-        
+        value: 5000       //我的数值       
     }
+}
 */
 console.log(res.result);
 
