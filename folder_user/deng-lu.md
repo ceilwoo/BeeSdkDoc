@@ -191,6 +191,17 @@ bee.client.loginWithPlatform({
     });
 ```
 
+### Apple登录
+```typescript
+            bee.client.loginWithPlatform({
+                platform: bee.model.BeePlatformCode.APPLE,
+                code: "客户端获取到identity"
+            }, (err,res)=>{
+                if(err) return;
+                console.log("登录成功");
+            });
+```
+
 ## 登录返回
 
 所有登录接口都返回相同的数据BeeLoginResult
