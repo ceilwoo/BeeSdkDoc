@@ -6,8 +6,8 @@
 - 增加微信、手Q、Apple登录接口
 
 ### 下载 
-#### [Cocos Creator](/release/cocoscreator/1.0.1/beeSdk.ts)
-#### [Unity](../../release/unity/1.0.1/beeSdk.cs)
+#### [Cocos Creator](https://cdn.jsdelivr.net/gh/ceilwoo/BeeSdkDoc@latest/release/cocoscreator/1.0.1/BeeSdk.ts)
+#### [Unity](https://cdn.jsdelivr.net/gh/ceilwoo/BeeSdkDoc@latest/release/unity/1.0.1/BeeSdk.cs)
 
 ------------
 ## 1.0.0
