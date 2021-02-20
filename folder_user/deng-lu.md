@@ -94,7 +94,6 @@ Request
 | createAccount | string | true | 如果用户不存在，是否自动创建账号，默认false |
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
-
 ## loginWithPlatform
 
 用第三方渠道的唯一识别码登录，微信，facebook, apple id, twitter等

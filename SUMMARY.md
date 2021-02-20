@@ -24,3 +24,7 @@
 * [读取配置](folder_app/du-qu-pei-zhi.md)
 * [忘记密码](folder_app/wang-ji-mi-ma.md)
 
+## 其他
+
+* [API文档](qi-ta/api-wen-dang.md)
+

@@ -28,11 +28,13 @@ let res = await bee.client.getLeaderboard({
 */
 console.log(res.result);
 ```
+
 Request:
+
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
 | key | string | false | bee后台设置的排行榜id |
-| maxResultsCount| number | true | 获取排行榜长度，默认10， Max 100 |
+| maxResultsCount | number | true | 获取排行榜长度，默认10， Max 100 |
 | version | number | true | 获取指定版本号的排行榜，不输入则返回最新的排行榜 |
 
 Result:
@@ -40,7 +42,7 @@ Result:
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
 | leaderboard | Array&lt;BeeLeaderboard&gt; | false | 排行榜topN的数组 |
-| nextReset| string | false | 排行榜更新的UTC时间 |
+| nextReset | string | false | 排行榜更新的UTC时间 |
 | version | number | false | 当前排行榜的版本号 |
 | totalUser | number | false | 排行榜总人数 |
 | position | number | false | 我的排名，下标1开始 |
@@ -58,24 +60,27 @@ bee.client.updateLeaderboards({
     }
 })
 ```
+
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
-| leaderboard | {[k:string]:string}| false | key(排行榜id)-value(数值) |
-
+| leaderboard | {\[k:string\]:string} | false | key\(排行榜id\)-value\(数值\) |
 
 ## getUserLeaderboard
+
 获取用户的排行榜信息
+
 ```typescript
 let res = await bee.client.getUserLeaderboard({
     key : "LEADERBOARD_ID_1"
 });
 console.log(res.result)
 ```
+
 Request:
 
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
-| beeId | string | true | 获取某个玩家的信息，如果为空则默认请求自己的信息|
+| beeId | string | true | 获取某个玩家的信息，如果为空则默认请求自己的信息 |
 | key | string | false | bee后台设置的排行榜id |
 | version | number | true | 指定版本号，不输入version则返回最新的排行榜 |
 
@@ -106,17 +111,18 @@ let res = await bee.client.getFriendLeaderboard({
         totalUser: 120,   //排行榜总用户
         position: 10,     //我的排名
         value: 5000       //我的数值
-        
+
     }
 */
 console.log(res.result);
 ```
 
 Request:
+
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
 | key | string | false | bee后台设置的排行榜id |
-| maxResultsCount| number | true | 获取排行榜长度，默认10， Max 100 |
+| maxResultsCount | number | true | 获取排行榜长度，默认10， Max 100 |
 | version | number | true | 获取指定版本号的排行榜，不输入则返回最新的排行榜 |
 
 Result:
@@ -124,14 +130,16 @@ Result:
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
 | leaderboard | Array&lt;BeeLeaderboard&gt; | false | 排行榜topN的数组 |
-| nextReset| string | false | 排行榜更新的UTC时间 |
+| nextReset | string | false | 排行榜更新的UTC时间 |
 | version | number | false | 当前排行榜的版本号 |
 | totalUser | number | false | 排行榜总人数 |
 | position | number | false | 我的排名，下标1开始 |
 | value | number | false | 我的数值 |
 
 ## 备注：
+
 BeeLeaderboard
+
 | 属性 | 类型 | optional | desc |
 | :--- | :--- | :--- | :--- |
 | beeId | string | false | 目标的beeId |
@@ -139,3 +147,4 @@ BeeLeaderboard
 | value | number | false | 数值 |
 | avatarUrl | string | false | 用户头像地址 |
 | displayName | string | false | 用户昵称 |
+
