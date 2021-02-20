@@ -26,8 +26,6 @@
 
 ## 其他
 
----
-
 * [官网](http://beecs.taoqi001.com/)
 * [API文档](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.1#/)
 
