@@ -1,5 +1,7 @@
 # Cocos Creator使用简介
 
+[注册](http://beecs.taoqi001.com/) Bee账号，在后台新建一个App
+
 [下载](xia-zai-sdk.md) SDK后放在cocos creator项目的asset文件夹内的任意地方即可开始使用。
 
 ## 引入typescript sdk
