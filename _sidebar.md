@@ -6,6 +6,7 @@
  * [Cocos Creator使用简介](folder_new/cocos-creator-sdk-jian-jie.md)
  * [下载SDK](folder_new/xia-zai-sdk.md)
  * [Demo](folder_new/demo.md)
+ * [官网](http://beecs.taoqi001.com/)
 
 * 玩家功能介绍 <a id="folder_user"></a>
 
@@ -23,15 +24,12 @@
  * [读取配置](folder_app/du-qu-pei-zhi.md)
  * [忘记密码](folder_app/wang-ji-mi-ma.md)
 
-<<<<<<< HEAD
 * 服务协议 <a id="folder_app"></a>
 
  * [读取配置](folder_app/du-qu-pei-zhi.md)
  * [忘记密码](folder_app/wang-ji-mi-ma.md)
-=======
+
 * 其他
 
- * [官网](http://beecs.taoqi001.com/)
  * [API文档](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.1#/)
->>>>>>> 866df4df5d5c31f5438242c98e98e512a385fa5a
 
