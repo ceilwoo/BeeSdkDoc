@@ -4,7 +4,7 @@
 
 ## loginWithCustomId
 
-[API](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.0#/LoginWithCustomId)
+[API](https://app.swaggerhub.com/apis/BeeSDK/BeeClientSDK/1.0.1#/LoginWithCustomId)
 
 用唯一的自定义id登录，可以是生成的随机字符串、设备id，idfa，gid等。主要用于匿名登录。
 
@@ -94,35 +94,6 @@ Request
 | createAccount | string | true | 如果用户不存在，是否自动创建账号，默认false |
 | infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
-## loginWithPhone
-
-用手机+验证码登录 或者 手机+密码登录
-
-```typescript
-bee.client.loginWithPhone({
-    phone: "13800138000",
-    authCode: "123456"
-}, (err,res)=>{
-    if(err){
-        //登录失败
-        console.log(err);
-        return;
-    }
-    //登录成功，打印登录信息
-    console.log(res.result);
-})
-```
-
-Request
-
-| 属性 | type | opational | desc |
-| :--- | :--- | :--- | :--- |
-| phone | string | false | 邮箱 |
-| authCode | string | false | 验证码 |
-| password | string | true | 使用手机+密码登录时需要的密码 |
-| createAccount | string | true | 如果用户不存在，是否自动创建账号，默认false |
-| infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
-
 ## loginWithPlatform
 
 用第三方渠道的唯一识别码登录，微信，facebook, apple id, twitter等
@@ -190,6 +161,47 @@ bee.client.loginWithPlatform({
         complete: (res) => { }
     });
 ```
+
+### Apple登录
+
+```typescript
+            bee.client.loginWithPlatform({
+                platform: bee.model.BeePlatformCode.APPLE,
+                code: "客户端获取到的 Identity token"
+            }, (err,res)=>{
+                if(err) return;
+                console.log("登录成功");
+            });
+```
+
+## loginWithPhone
+
+用手机+验证码登录 或者 手机+密码登录
+
+```typescript
+bee.client.loginWithPhone({
+    phone: "13800138000",
+    authCode: "123456"
+}, (err,res)=>{
+    if(err){
+        //登录失败
+        console.log(err);
+        return;
+    }
+    //登录成功，打印登录信息
+    console.log(res.result);
+})
+```
+
+Request
+
+| 属性 | type | opational | desc |
+| :--- | :--- | :--- | :--- |
+| phone | string | false | 邮箱 |
+| authCode | string | true | 使用手机+验证码登录时需要的验证码 |
+| password | string | true | 使用手机+密码登录时需要的密码 |
+| createAccount | string | true | 如果用户不存在，是否自动创建账号，默认false |
+| infoRequest | BeeInfoRequest | true | 登录时需要获取的详细内容 |
 
 ## 登录返回
 
