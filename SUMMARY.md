@@ -24,11 +24,10 @@
 
 * [读取配置](folder_app/du-qu-pei-zhi.md)
 * [忘记密码](folder_app/wang-ji-mi-ma.md)
-
-## 服务协议 <a id="folder_app"></a>
-
 * [读取配置](folder_app/du-qu-pei-zhi.md)
 * [忘记密码](folder_app/wang-ji-mi-ma.md)
+
+## 服务协议 <a id="folder_app"></a>
 
 ## 其他
 
